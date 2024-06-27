@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <description></description>
+    <display-name>Log</display-name>
+    <servlet-name>Log</servlet-name>
+    <servlet-class>com.akshu.form.Log</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Log</servlet-name>
+    <url-pattern>/Log</url-pattern>
+    <url-pattern>/log</url-pattern>
+  </servlet-mapping>
+  <display-name>Forn</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Reg</display-name>
+    <servlet-name>Reg</servlet-name>
+    <servlet-class>com.akshu.form.Reg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reg</servlet-name>
+    <url-pattern>/Reg</url-pattern>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+</web-app>

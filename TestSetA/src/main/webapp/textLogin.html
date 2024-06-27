@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Welcome To Login Page</h1>
+	<div>
+		<form action="testLogin" method="post">
+				
+				<label for="userId">User Name : </label>
+				<input type="text" name="userName" id="userId" ><br><br>
+				
+				<label for="pword">Password : </label>
+				<input type="password" name="pword" id="pword" ><br><br>
+				
+				<button type="submit" onclick="validateLogin()">Login</button>&nbsp;&nbsp;&nbsp;
+		</form>
+	</div>
+	
+	<script>
+		function validateLogin()
+		{
+			var uId  = document.getElementById('userId').value;
+			var pword = document.getElementById('pword').value;
+			
+			if(uId === '')
+			{
+				alert('Please insert User Id');
+				return false;
+			}
+			if(pword === '' )
+			{
+				alert('Please insert User Id');
+				return false;
+			}
+			if (!accountType)
+   			{
+		        alert('Please select your Account type.');
+		        return false;
+   			}
+   			 
+   			return true;
+		}
+	</script>
+</body>
+</html>
+
+

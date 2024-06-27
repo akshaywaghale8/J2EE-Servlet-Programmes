@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form id="orderForm" onsubmit="validateForm(event)" action="getPizzaOrder" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="crust">Select the Crust:</label>
+        <select id="crust" name="crust" required>
+            <option value="">-- Select Crust --</option>
+            <option value="thin">Thin Crust</option>
+            <option value="regular">Regular Crust</option>
+            <option value="stuffed">Stuffed Crust</option>
+        </select>
+
+        <label>Toppings:</label>
+     
+            <input type="checkbox" id="cheese" name="toppings" value="cheese"> Cheese <br>
+			
+            <input type="checkbox" id="paneer" name="toppings" value="paneer"> Paneer <br>
+			
+            <input type="checkbox" id="redPeppers" name="toppings" value="redPeppers"> Red Peppers<br>
+			
+            <input type="checkbox" id="onion" name="toppings" value="onion"> Onion <br>
+			
+            <input type="checkbox" id="tomato" name="toppings" value="tomato"> Tomato <br>
+			
+            <input type="checkbox" id="pineapple" name="toppings" value="pineapple"> Pineapple <br>
+
+        <label>Select 1 Free Appetizer:</label>
+        
+            <input type="radio" id="garlicBread" name="appetizer" value="garlicBread" required> Garlic Bread
+
+            <input type="radio" id="cheeseGarlicBread" name="appetizer" value="cheeseGarlicBread"> Cheese Garlic Bread
+			<br>
+            <input type="radio" id="vegScoop" name="appetizer" value="vegScoop"> Veg Scoop
+			&nbsp;
+            <input type="radio" id="vegSandwich" name="appetizer" value="vegSandwich"> Veg Sandwich
+        
+		<br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label>Card Type:</label>
+        <div class="cardType">
+            <input type="radio" id="visa" name="cardType" value="visa" required>
+            <label for="visa">Visa</label>
+
+            <input type="radio" id="mastercard" name="cardType" value="mastercard">
+            <label for="mastercard">MasterCard</label>
+
+            <input type="radio" id="americanExpress" name="cardType" value="americanExpress">
+            <label for="americanExpress">American Express</label>
+
+            <input type="radio" id="rupay" name="cardType" value="rupay">
+            <label for="rupay">Rupay</label>
+        </div>
+		<div style="display: flex; text-align: center; margin: auto;">
+			<div>
+			<label for="cardNumber">Card Number:</label>
+        	<input type="text" id="cardNumber" name="cardNumber" required>
+			</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div>
+			<label for="conformCardNumber">Conform Card Number:</label>
+        	<input type="text" id="conformCardNumber" name="conformCardNumber" required>
+			</div>
+		</div>
+		
+        <button type="submit" name="btnSub">Order Now</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

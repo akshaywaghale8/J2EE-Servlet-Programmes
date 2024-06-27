@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Welcome to Univercity Registration Page</h1>
+	
+	<div>
+		<form action="testRegister" method="post">
+			
+			<label for="name">User Name: </label>
+			<input type="text" name="name" id="name"><br><br>
+			
+			
+			<label for="pword">Password : </label>
+			<input type="password" name="pword" id="pword"><br><br>
+			
+			<label for="fName">Frist Name: </label>
+			<input type="text" name="fName" id="fName"><br><br>
+			
+			
+			<label for="lName">Frist Name: </label>
+			<input type="text" name="lName" id="lName"><br><br>
+			
+			<label for="address">Address: </label>
+			<input type="text" name="address" id="address"><br><br>
+			
+			<label for="email">Mail-Id: </label>
+			<input type="email" name="email" id="email"><br><br>
+			
+			<label for="phNumber">Phone Number: </label>
+			<input type="text" name="phNumber" id="phNumber"><br><br>
+			
+			
+			<button type="submit" onclick="validateRagister()">Register</button>&nbsp;&nbsp;&nbsp;
+			
+		</form>
+	</div>
+	
+	<script>
+		function validateRagister()
+		{
+			var name = document.getElementById('name').value;
+			var uid =  document.getElementById('phNumber').value;
+			var pword = document.getElementById('pword').value;
+			var email = document.getElementById('email').value;
+			var accountType =  document.getElementById('accountType').value;
+			if(email === '')
+			{
+				alret('Email Cant be Empty');
+				return false;
+			}
+			if(name === '')
+			{
+				alret('Name Cant be Empty');
+				return false;
+			}
+			if(pword === '')
+			{
+				alret('Password Cant be Empty');
+				return false;
+			}
+			if(pword.lenth() < 5)
+			{
+				alret('Password can not less than 5 charecter');
+				return false;
+			}
+			if(pword.lenth() > 20)
+			{
+				alret('Password can not greather than 20 charecter');
+				return false;
+			}
+			if(UId === '')
+			{
+				alret('User ID Cant be Empty');
+				return false;
+			}
+			if (!accountType)
+   			{
+		        alert('Please select your Account type.');
+		        return false;
+   			}
+			
+			return true;
+		}
+	</script>
+</body>
+</html>

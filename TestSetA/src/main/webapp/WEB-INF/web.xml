@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>databaseUrl</param-name>
+    <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+  </context-param>
+  <context-param>
+    <param-name>userName</param-name>
+    <param-value>C##Ash</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pword</param-name>
+    <param-value>akshu</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>TestLogin</display-name>
+    <servlet-name>TestLogin</servlet-name>
+    <servlet-class>com.akshu.text.TestLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestLogin</servlet-name>
+    <url-pattern>/testLogin</url-pattern>
+  </servlet-mapping>
+  <display-name>TestSetA</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>testRegister</display-name>
+    <servlet-name>testRegister</servlet-name>
+    <servlet-class>com.akshu.text.testRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testRegister</servlet-name>
+    <url-pattern>/testRegister</url-pattern>
+  </servlet-mapping>
+</web-app>

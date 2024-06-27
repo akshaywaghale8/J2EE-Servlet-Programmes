@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="formValidation.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center";>Personal Details</h1>
+	<div>
+		<form action="storePersonalDetails" method="post" >
+		
+		<lebal for ="fname">Name: </lebal>
+		<input type="text" id="fname" name="fname"><br><br>
+		
+		<lebal for ="age">Age: </lebal>
+		<input type="number" id="age"  name="age"><br><br>
+		
+		<lebal for ="mNumber">Mobile Number: </lebal>
+		<input type="number" id="mNumber"  name="mNumber"><br><br>
+		
+		<lebal for ="gender ">Gender: </lebal>
+		<input type="radio" name="gender" value="Male" id="gender">Male&nbsp;&nbsp;&nbsp;
+		<input type="radio"name="gender" value="Female" id="gender" >Female<br><br>
+		
+		
+		<lebal for ="hobbies">Choose your Hobbies</lebal><br>
+		<input type="checkbox" name="hobbies" value="Play Kabbdi" id="hobbies">Play Kabbdi&nbsp;&nbsp;&nbsp;
+		<input type="checkbox"name="hobbies" value="Read Books" id="hobbies">Read Books<br>
+		<input type="checkbox" name="hobbies" value="sleeping" id="hobbies" >Sleeping&nbsp;&nbsp;&nbsp;
+		<input type="checkbox"name="hobbies" value="coding" id="hobbies" >Coding<br><br>
+		
+		<button onclick="validateForm()">Click</button>
+		
+	</form>
+	</div>
+</body>
+</html>
